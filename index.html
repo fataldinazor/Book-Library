@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book-Library</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h4>Library</h4>
+        <button class="signUp">Sign Up</button>
+      </div>
+      <div class="mainContent">
+          <nav>
+            <div>Book Name</div>
+            <div>Author Name</div>
+            <div>Pages</div>
+            <div>Read</div>
+          </nav>
+          <div class="bookInfo">
+            
+          </div>
+        </div>
+        <dialog open>
+          <form method="dialog">
+            <label for="book_name"
+              >Book<br />
+              <input type="text" id="book_name" name="book_name" /> </label
+            ><br />
+            <label for="author_name"
+              >Author <br />
+              <input type="text" id="author_name" name="author_name" /> </label
+            ><br />
+            <label for="pages"
+            >Pages<br />
+              <input type="number" id="pages" name="pages" /></label
+            ><br />
+            <label for="read"
+              >Have you Read this book?
+              <input type="checkbox" id="read" /></label
+            ><br />
+            <button type="button" onclick="processForm()">Submit</button>
+            <button class="closeBtn">Close</button>
+          </form>
+        </dialog>
+        <button class="openDialog">+</button>
+      </div>
+      <div class="footer">&copy all rights reserved. Library</div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
