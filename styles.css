@@ -21,7 +21,8 @@ body {
   font-size: 30px;
   font-weight: 600;
   height: 70px;
-  background-color: rgb(169, 213, 251);
+  justify-content: space-between;
+  background-color: rgb(156, 209, 255);
 }
 h4 {
   color: rgb(255, 255, 255);
@@ -33,40 +34,50 @@ h4 {
 
 .mainContent {
   display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
-  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 10fr;
+  row-gap: 20px;
 }
 
 nav {
   grid-column: 2/3;
 
   display: grid;
-  grid-template-columns: 3fr 3fr 2fr 1fr;
+  grid-template-columns: 3fr 3fr 1fr 1fr;
   gap: 20px;
   font-weight: 600;
 
-  outline: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(184, 220, 252);
   height: 5vh;
+}
+
+nav > div {
+  align-self: center;
+  justify-self: center;
 }
 
 .bookInfo {
   grid-column: 2/3;
-  height: 20px;
-  width: 100%;
   display: grid;
-  grid-template-columns: 3fr 3fr 2fr 1fr;
+  grid-template-columns: 3fr 3fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
   gap: 20px;
-  align-items: start;
+
+  border-radius: 3vh;
+  background-color: rgb(216, 234, 250);
 }
 
-/* .bookChildInfo{
-    
-} */
+.bookInfo > div {
+}
+
+.bookChildInfo {
+  align-self: center;
+  justify-self: center;
+}
 
 .openDialog {
-  /* position: fixed; */
-  /* top: 87vh;
-  left: 95vw; */
+  display: inline-block;
   font-size: 30px;
   border-radius: 50%;
   width: 50px;

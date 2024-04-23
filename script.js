@@ -54,6 +54,7 @@ function updateDisplay() {
   bookInfo.textContent = "";
 
   books.forEach(function (book) {
+    
     const title = document.createElement("div");
     title.textContent = book.title;
     title.setAttribute("class", "bookChildInfo");
@@ -61,7 +62,7 @@ function updateDisplay() {
 
     const author = document.createElement("div");
     author.textContent = book.author;
-    title.setAttribute("class", "bookChildInfo");
+    author.setAttribute("class", "bookChildInfo");
     bookInfo.appendChild(author);
 
     const pages = document.createElement("div");
@@ -73,6 +74,8 @@ function updateDisplay() {
     read.textContent = book.read;
     read.setAttribute("class", "bookChildInfo");
     bookInfo.appendChild(read);
+
+    book
   });
 }
 
