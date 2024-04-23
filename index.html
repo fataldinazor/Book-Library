@@ -24,7 +24,7 @@
           </div>
         </div>
         <dialog open>
-          <form method="dialog">
+          <form method="dialog" id="bookForm">
             <label for="book_name"
               >Book<br />
               <input type="text" id="book_name" name="book_name" /> </label
@@ -37,11 +37,20 @@
             >Pages<br />
               <input type="number" id="pages" name="pages" /></label
             ><br />
-            <label for="read"
+            <!-- <label for="read"
               >Have you Read this book?
-              <input type="checkbox" id="read" /></label
-            ><br />
-            <button type="button" onclick="processForm()">Submit</button>
+              <input type="checkbox" id="read" /></label> -->
+              <div>
+                Have you Read this Book <br>
+                <label for="read">Yes
+                  <input type="radio" id="read" value="Yes">
+                </label>
+                <label for="read">No
+                  <input type="radio" id="read" value="No">
+                </label>
+              </div>
+              <br />
+            <button class="submitBtn" type="button" onclick="processForm()">Submit</button>
             <button class="closeBtn">Close</button>
           </form>
         </dialog>

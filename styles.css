@@ -1,78 +1,90 @@
-body{
-    margin:0;
-    padding:0;
-    height:100vh;
-    width:100vw;
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
 
-    background-color: rgb(232, 243, 252);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.container{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
+  background-color: rgb(232, 243, 252);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.header{
-    display: flex;
-    font-size: 30px;
-    font-weight: 600;
-    height:70px;
-    background-color: rgb(169, 213, 251);
-}
-h4{
-    color:rgb(255, 255, 255);
-}
-.header>*{
-    margin: 15px;
-    justify-self: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
-.mainContent{
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+.header {
+  display: flex;
+  font-size: 30px;
+  font-weight: 600;
+  height: 70px;
+  background-color: rgb(169, 213, 251);
+}
+h4 {
+  color: rgb(255, 255, 255);
+}
+.header > * {
+  margin: 15px;
+  justify-self: center;
 }
 
-nav{
-    grid-column: 2/3;
-    display: grid;
-    grid-template-columns: 3fr 3fr 2fr 1fr;
-    gap:20px;
+.mainContent {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
 }
 
-.bookInfo{
-    grid-column: 2/3;
-    outline:1px solid black;
-    height:20px;
-    width:100%
-    display: grid;
-    grid-template-columns: 3fr 3fr 2fr 1fr;
-    gap:20px;
+nav {
+  grid-column: 2/3;
+
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr 1fr;
+  gap: 20px;
+  font-weight: 600;
+
+  outline: 1px solid black;
+  height: 5vh;
 }
 
-.openDialog{
-    position: fixed;
-    top:87vh;
-    left:95vw;
-    font-size: 30px;
-    border-radius: 50%;
-    width: 50px;
-    height:50px;
-    outline: none;
-    outline: 1px solid white;
+.bookInfo {
+  grid-column: 2/3;
+  height: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr 1fr;
+  gap: 20px;
+  align-items: start;
 }
 
-.footer{
-    text-align: center;
-    box-sizing: border-box;
-    padding:1vh;
-    background-color: azure;
-    font-weight: 500;
+/* .bookChildInfo{
+    
+} */
+
+.openDialog {
+  /* position: fixed; */
+  /* top: 87vh;
+  left: 95vw; */
+  font-size: 30px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  outline: 1px solid white;
+  margin: 20px;
 }
 
-dialog::backdrop{
-    opacity:50%;
-    background-color:black;
+.footer {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 1vh;
+  background-color: azure;
+  font-weight: 500;
+}
+
+dialog::backdrop {
+  opacity: 50%;
+  background-color: black;
 }
