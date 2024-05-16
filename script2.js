@@ -56,6 +56,12 @@ class myLib {
   }
 }
 
+const newBook1=new myLib('Harry Potter and the Philosopher\'s Stone','J. K. Rowling',223, 'Yes')
+newBook1.createDisplay();
+
+const newBook2=new myLib('The Hunger Games','Suzanne Collins',374, 'No');
+newBook2.createDisplay();
+
 bookForm.addEventListener("submit", function (e) {
   e.preventDefault();
 
