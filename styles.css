@@ -8,21 +8,31 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
+button{
+  border:none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding:5px 10px;
+  margin:5px 10px;
+  color: rgb(3, 77, 143);
+  background-color: rgb(190, 224, 253);
+}
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 100vh;
+  justify-content: start;
 }
 
 .header {
   display: flex;
   font-size: 30px;
   font-weight: 600;
-  height: 70px;
+  height: 4rem;
   justify-content: space-between;
   background-color: rgb(156, 209, 255);
+  box-sizing: border-box;
+  padding:0 2rem;
 }
 h4 {
   color: rgb(255, 255, 255);
@@ -33,9 +43,9 @@ h4 {
 }
 
 .mainContent {
+  margin: 2rem 0;
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 1fr 10fr;
+  grid-template-columns: 1fr 7fr 1fr;
   row-gap: 20px;
 }
 
@@ -43,13 +53,15 @@ nav {
   grid-column: 2/3;
 
   display: grid;
+  position: sticky;
   grid-template-columns: 3fr 3fr 1fr 1fr;
   gap: 20px;
-  font-weight: 600;
+  font-weight: 700;
 
   border-radius: 5px;
   background-color: rgb(184, 220, 252);
   height: 5vh;
+  color: rgb(0, 65, 122);
 }
 
 nav > div {
@@ -57,34 +69,59 @@ nav > div {
   justify-self: center;
 }
 
-.bookInfo {
+.info {
   grid-column: 2/3;
+}
+
+.bookInfo {
+  box-sizing: border-box;
+  padding: 10px 0;
   display: grid;
   grid-template-columns: 3fr 3fr 1fr 1fr;
-  grid-auto-rows: minmax(100px, auto);
   gap: 20px;
+  font-weight: 500;
+  background-color: rgb(210, 231, 250);
+  border-radius: 5px;
 
-  border-radius: 3vh;
-  background-color: rgb(216, 234, 250);
+  margin: 10px 0;
 }
 
 .bookInfo > div {
-}
-
-.bookChildInfo {
   align-self: center;
   justify-self: center;
 }
 
 .openDialog {
   display: inline-block;
+  position: fixed;
+  top:84vh;
   font-size: 30px;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  outline: none;
+  border:1px solid rgb(1, 52, 97);
   outline: 1px solid white;
   margin: 20px;
+}
+
+dialog{
+  border: 2px solid rgb(127, 195, 255);
+  background-color: aliceblue;
+  color: rgb(2, 56, 104);
+}
+
+form>label{
+  box-sizing: border-box;
+  margin:0px;
+  display: flex;
+  flex-direction: column;
+  margin:7px 0; 
+}
+
+form>div{
+  display: flex;
+  flex-direction: column;
+  margin-bottom:10px ;
 }
 
 .footer {

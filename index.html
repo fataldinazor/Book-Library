@@ -19,39 +19,36 @@
             <div>Pages</div>
             <div>Read</div>
           </nav>
-          <div class="bookInfo">
+          <div class="info">
             
           </div>
         </div>
-        <dialog open>
-          <form method="dialog" id="bookForm">
-            <label for="book_name"
-              >Book<br />
-              <input type="text" id="book_name" name="book_name" /> </label
-            ><br />
-            <label for="author_name"
-              >Author <br />
-              <input type="text" id="author_name" name="author_name" /> </label
-            ><br />
-            <label for="pages"
-            >Pages<br />
-              <input type="number" id="pages" name="pages" /></label
-            ><br />
-            <!-- <label for="read"
-              >Have you Read this book?
-              <input type="checkbox" id="read" /></label> -->
-              <div>
-                Have you Read this Book <br>
-                <label for="read">Yes
-                  <input type="radio" id="read" value="Yes">
+        <dialog>
+          <form id="bookForm">
+            <label for="book_name">Book
+              <input type="text" id="book_name" name="book_name" required/> 
+            </label>
+
+            <label for="author_name">Author
+              <input type="text" id="author_name" name="author_name" required/> 
+            </label>
+
+            <label for="pages">Pages
+              <input type="number" id="pages" name="pages" required/>
+            </label>
+
+            <div>
+                Have you Read this Book
+                <label for="read">
+                  <input type="radio" id="readYes" name='read' value="Yes" required>Yes
                 </label>
-                <label for="read">No
-                  <input type="radio" id="read" value="No">
+                <label for="read">
+                  <input type="radio" id="readNo" name='read' value="No">No
                 </label>
-              </div>
-              <br />
-            <button class="submitBtn" type="button" onclick="processForm()">Submit</button>
-            <button class="closeBtn">Close</button>
+            </div>
+            
+              <button class="submitBtn" type="submit">Submit</button>
+              <button class="closeBtn">Close</button>
           </form>
         </dialog>
         <button class="openDialog">+</button>
@@ -59,5 +56,5 @@
       <div class="footer">&copy all rights reserved. Library</div>
     </div>
   </body>
-  <script src="script.js"></script>
+  <script src="script2.js"></script>
 </html>
